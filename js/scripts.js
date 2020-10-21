@@ -1,10 +1,10 @@
 $(document).ready(function() {
-  $("#make-dem-shouts").submit(function() {
-    const [declared value] = $("input[#this on the page]").val();
+  $("#make-dem-shouts").submit(function(event) {
+    const shoutOutput = $("input#shouts").val();
+    const shoutOutput2 = shoutOutput.toUpperCase();
+    $(".shoutput").text(shoutOutput2);
 
-    $(".[class]").text([declared value]);
-
-    $(#["the shouting"]).show();
+    $(".mystery-shouts").show();
 
     event.preventDefault();
   });
